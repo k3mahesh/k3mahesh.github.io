@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahesh Kumar — DevOps Architect with 7 years of experience in cloud-native infrastructure, Kubernetes, Terraform, and CI/CD automation." />
+  <meta name="keywords" content="DevOps, Kubernetes, Terraform, AWS, Azure, CI/CD, Platform Engineering, Cloud Infrastructure" />
+  <meta name="author" content="Mahesh Kumar" />
+  <title>Mahesh Kumar — DevOps Architect</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;<span>MK</span> /&gt;</a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">MAHESH KUMAR</h1>
+        <div class="hero-role reveal">
+          <span class="hero-role-prefix">// </span>
+          <span class="typing-text" id="typing-text"></span>
+          <span class="typing-cursor" id="typing-cursor">|</span>
+        </div>
+        <p class="hero-tagline reveal">7 years building scalable cloud-native infrastructure</p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i> View My Work
+          </a>
+          <a href="#" class="btn btn-outline" download>
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="hero-badges reveal">
+          <span class="badge float-1"><i class="fa-brands fa-aws"></i> AWS</span>
+          <span class="badge float-2"><i class="fa-solid fa-dharmachakra"></i> Kubernetes</span>
+          <span class="badge float-3"><i class="fa-solid fa-layer-group"></i> Terraform</span>
+          <span class="badge float-4"><i class="fa-brands fa-docker"></i> Docker</span>
+          <span class="badge float-5"><i class="fa-solid fa-cloud"></i> Azure</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== CAREER HIGHLIGHTS ========== -->
+  <section class="highlights" id="about">
+    <div class="section-container">
+      <div class="highlights-grid">
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="7">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Years</div>
+          <div class="stat-desc">DevOps &amp; Cloud Experience</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="130">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Repos</div>
+          <div class="stat-desc">Migrated with Zero Downtime</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Clients</div>
+          <div class="stat-desc">End-to-End DevOps Transformations</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Microservices</div>
+          <div class="stat-desc">Orchestrated on Nomad / EKS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECHNICAL SKILLS ========== -->
+  <section class="skills-section" id="skills">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">// expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-sub">Tools, platforms, and practices I've used to ship production infrastructure</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="category-header">
+            <i class="fa-solid fa-cloud category-icon"></i>
+            <span class="category-label">Cloud &amp; Orchestration</span>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Kubernetes (EKS, AKS)</span>
+            <span class="pill">AWS</span>
+            <span class="pill">Azure</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Nomad &amp; Consul</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="category-header">
+            <i class="fa-solid fa-code category-icon"></i>
+            <span class="category-label">IaC &amp; Automation</span>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Terraform</span>
+            <span class="pill">Ansible</span>
+            <span class="pill">Python Automation</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="category-header">
+            <i class="fa-solid fa-arrows-rotate category-icon"></i>
+            <span class="category-label">CI/CD</span>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Jenkins &amp; Shared Libraries</span>
+            <span class="pill">Azure DevOps</span>
+            <span class="pill">GitHub / Bitbucket</span>
+            <span class="pill">CI/CD Pipeline Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="category-header">
+            <i class="fa-solid fa-chart-line category-icon"></i>
+            <span class="category-label">Observability</span>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Prometheus &amp; Alertmanager</span>
+            <span class="pill">Grafana Dashboards</span>
+            <span class="pill">Datadog APM</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="category-header">
+            <i class="fa-solid fa-network-wired category-icon"></i>
+            <span class="category-label">Networking &amp; OS</span>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Nginx &amp; HAProxy</span>
+            <span class="pill">Linux Administration</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="category-header">
+            <i class="fa-solid fa-shield-halved category-icon"></i>
+            <span class="category-label">Security</span>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">DevSecOps</span>
+            <span class="pill">SAST</span>
+            <span class="pill">Secrets Scan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORK EXPERIENCE ========== -->
+  <section class="experience-section" id="experience">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">// career</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-role">
+          <div class="timeline-dot"></div>
+          <div class="timeline-role-header">
+            <div class="timeline-role-info">
+              <h3 class="role-title">Lead DevOps Engineer / DevOps Architect</h3>
+              <span class="role-company">OpsTree Solutions</span>
+            </div>
+            <span class="role-period">Mar 2019 – Present</span>
+          </div>
+        </div>
+
+        <div class="client-cards">
+
+          <!-- Apple -->
+          <div class="client-card reveal">
+            <div class="client-card-header" onclick="toggleCard(this)">
+              <div class="client-info">
+                <div class="client-icon"><i class="fa-brands fa-apple"></i></div>
+                <div>
+                  <h4 class="client-name">Apple Hyderabad</h4>
+                  <span class="client-context">On-Premises &amp; AWS Hybrid Infrastructure</span>
+                </div>
+              </div>
+              <button class="toggle-btn" aria-label="Toggle card">
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+            </div>
+            <div class="client-card-body">
+              <ul class="achievement-list">
+                <li>Architected and managed a Nomad + Consul cluster orchestrating 100+ microservices on-premises</li>
+                <li>Designed and led migration of services from Nomad to Amazon EKS via Terraform</li>
+                <li>Developed Python utility to automate SSL/TLS certificate renewal in secret management system</li>
+                <li>Integrated Grafana for real-time certificate visibility; reduced alert noise by ~40%</li>
+                <li>Authored alert runbooks adopted by entire on-call team</li>
+                <li>Managed Nginx and HAProxy for load balancing; integrated Java apps with Datadog APM</li>
+                <li>Automated server administration tasks using Ansible</li>
+              </ul>
+              <div class="client-tags">
+                <span class="tag">AWS EKS</span>
+                <span class="tag">Nomad</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Datadog</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pine Labs -->
+          <div class="client-card reveal">
+            <div class="client-card-header" onclick="toggleCard(this)">
+              <div class="client-info">
+                <div class="client-icon"><i class="fa-solid fa-credit-card"></i></div>
+                <div>
+                  <h4 class="client-name">Pine Labs</h4>
+                  <span class="client-context">CI/CD Modernization, SCM Migration &amp; DevSecOps</span>
+                </div>
+              </div>
+              <button class="toggle-btn" aria-label="Toggle card">
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+            </div>
+            <div class="client-card-body">
+              <ul class="achievement-list">
+                <li>Led end-to-end migration of 130 repositories from Bitbucket to GitHub with zero downtime</li>
+                <li>Architected Jenkins infrastructure on AWS from scratch using Terraform (master + EC2 slave nodes)</li>
+                <li>Automated Jenkins setup with Ansible for consistent, repeatable deployments</li>
+                <li>Redesigned all CI/CD pipelines using Jenkins Shared Libraries — cut maintenance effort by ~70%</li>
+                <li>Drove pipeline optimizations: parallel stages, caching, artifact reuse</li>
+                <li>Introduced DevSecOps: SAST, dependency scanning, secrets detection as mandatory pipeline gates</li>
+              </ul>
+              <div class="client-tags">
+                <span class="tag">Jenkins</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">Ansible</span>
+                <span class="tag">DevSecOps</span>
+                <span class="tag">AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internal Platform -->
+          <div class="client-card reveal">
+            <div class="client-card-header" onclick="toggleCard(this)">
+              <div class="client-info">
+                <div class="client-icon"><i class="fa-solid fa-gears"></i></div>
+                <div>
+                  <h4 class="client-name">Central Platform Team</h4>
+                  <span class="client-context">Internal Tooling &amp; Reusable Frameworks</span>
+                </div>
+              </div>
+              <button class="toggle-btn" aria-label="Toggle card">
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+            </div>
+            <div class="client-card-body">
+              <ul class="achievement-list">
+                <li>Architected reusable Terraform module library adopted across multiple client projects — cut provisioning time by ~60%</li>
+                <li>Deployed Prometheus observability stack via Ansible for unified metrics collection</li>
+                <li>Designed custom Grafana dashboards for databases and middleware</li>
+                <li>Mentored junior engineers on Terraform, Ansible, and CI/CD best practices</li>
+                <li>Built generic reusable CI/CD pipeline framework for Java applications</li>
+              </ul>
+              <div class="client-tags">
+                <span class="tag">Terraform Modules</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Ansible</span>
+                <span class="tag">Jenkins</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publicis Sapient -->
+          <div class="client-card reveal">
+            <div class="client-card-header" onclick="toggleCard(this)">
+              <div class="client-info">
+                <div class="client-icon"><i class="fa-solid fa-building"></i></div>
+                <div>
+                  <h4 class="client-name">Publicis Sapient</h4>
+                  <span class="client-context">Azure Cloud Modernization</span>
+                </div>
+              </div>
+              <button class="toggle-btn" aria-label="Toggle card">
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+            </div>
+            <div class="client-card-body">
+              <ul class="achievement-list">
+                <li>Automated build/release cycles using Azure DevOps pipelines</li>
+                <li>Managed multi-node Cassandra, Kafka, SonarQube clusters using Ansible</li>
+                <li>Full-stack observability with Prometheus, Grafana, Telegraf, Alertmanager</li>
+                <li>Led migration from Azure App Services to AKS using Terraform</li>
+              </ul>
+              <div class="client-tags">
+                <span class="tag">Azure DevOps</span>
+                <span class="tag">AKS</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Kafka</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connect Minda -->
+          <div class="client-card reveal">
+            <div class="client-card-header" onclick="toggleCard(this)">
+              <div class="client-info">
+                <div class="client-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div>
+                  <h4 class="client-name">Connect Minda</h4>
+                  <span class="client-context">Azure Kubernetes &amp; Monitoring Architecture</span>
+                </div>
+              </div>
+              <button class="toggle-btn" aria-label="Toggle card">
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+            </div>
+            <div class="client-card-body">
+              <ul class="achievement-list">
+                <li>Designed and led VM to AKS migration</li>
+                <li>CI/CD pipelines in Azure DevOps for automated AKS deployments</li>
+                <li>Full Prometheus monitoring stack on AKS</li>
+                <li>Prometheus alerting integrated with Microsoft Teams and Slack</li>
+                <li>Custom Grafana dashboards for stakeholder reporting</li>
+              </ul>
+              <div class="client-tags">
+                <span class="tag">AKS</span>
+                <span class="tag">Azure DevOps</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Slack</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOTABLE PROJECTS ========== -->
+  <section class="projects-section" id="projects">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">// portfolio</span>
+        <h2 class="section-title">Notable Projects</h2>
+        <p class="section-sub">High-impact infrastructure initiatives delivered across enterprise clients</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-ship"></i></div>
+            <span class="project-client">Apple</span>
+          </div>
+          <h3 class="project-name">Nomad to EKS Migration</h3>
+          <p class="project-desc">Architected full migration strategy for 100+ production microservices from on-premises Nomad cluster to AWS EKS. Designed Terraform modules, migration runbooks, and zero-downtime cutover strategy.</p>
+          <div class="project-tags">
+            <span class="pill small">AWS</span>
+            <span class="pill small">EKS</span>
+            <span class="pill small">Terraform</span>
+            <span class="pill small">Nomad</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-brands fa-github"></i></div>
+            <span class="project-client">Pine Labs</span>
+          </div>
+          <h3 class="project-name">SCM Migration &amp; CI/CD Modernization</h3>
+          <p class="project-desc">Zero-downtime migration of 130 repositories from Bitbucket to GitHub. Rebuilt Jenkins on AWS with Terraform + Ansible, standardized pipelines via Shared Libraries, and added DevSecOps gates.</p>
+          <div class="project-tags">
+            <span class="pill small">GitHub</span>
+            <span class="pill small">Jenkins</span>
+            <span class="pill small">Terraform</span>
+            <span class="pill small">DevSecOps</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-cubes"></i></div>
+            <span class="project-client">Internal Platform</span>
+          </div>
+          <h3 class="project-name">Terraform Module Library</h3>
+          <p class="project-desc">Centralized reusable Terraform modules used across 5+ client engagements. Standardized VPC, EKS, RDS, and monitoring stacks — cutting provisioning time by ~60% and reducing drift.</p>
+          <div class="project-tags">
+            <span class="pill small">Terraform</span>
+            <span class="pill small">AWS</span>
+            <span class="pill small">IaC</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <span class="project-client">Multi-Client</span>
+          </div>
+          <h3 class="project-name">Enterprise Observability Framework</h3>
+          <p class="project-desc">Unified Prometheus + Grafana + Alertmanager stacks deployed across 4 enterprise clients. Designed alert runbooks, on-call workflows, and custom dashboards for SRE and business stakeholders.</p>
+          <div class="project-tags">
+            <span class="pill small">Prometheus</span>
+            <span class="pill small">Grafana</span>
+            <span class="pill small">Alertmanager</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-brands fa-python"></i></div>
+            <span class="project-client">Apple</span>
+          </div>
+          <h3 class="project-name">Certificate Automation Utility</h3>
+          <p class="project-desc">Python tool for automated SSL/TLS certificate lifecycle management integrated with a secrets management system. Reduced manual renewal overhead, integrated real-time visibility via Grafana dashboards.</p>
+          <div class="project-tags">
+            <span class="pill small">Python</span>
+            <span class="pill small">Automation</span>
+            <span class="pill small">Security</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEADERSHIP & MENTORING ========== -->
+  <section class="leadership-section" id="leadership">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">// impact</span>
+        <h2 class="section-title">Leadership &amp; Mentoring</h2>
+      </div>
+      <div class="leadership-grid">
+        <ul class="leadership-list">
+          <li class="leadership-item reveal">
+            <span class="check-icon"><i class="fa-solid fa-arrow-right"></i></span>
+            <span>Go-to DevOps architect for client engagements — owned infrastructure design decisions from discovery to delivery</span>
+          </li>
+          <li class="leadership-item reveal">
+            <span class="check-icon"><i class="fa-solid fa-arrow-right"></i></span>
+            <span>Mentored junior and mid-level engineers on Kubernetes, Terraform, CI/CD, and observability best practices</span>
+          </li>
+          <li class="leadership-item reveal">
+            <span class="check-icon"><i class="fa-solid fa-arrow-right"></i></span>
+            <span>Created internal documentation, runbooks, and alert one-pagers that improved on-call efficiency across teams</span>
+          </li>
+          <li class="leadership-item reveal">
+            <span class="check-icon"><i class="fa-solid fa-arrow-right"></i></span>
+            <span>Collaborated closely with development, QA, and business teams to align platform priorities with delivery goals</span>
+          </li>
+          <li class="leadership-item reveal">
+            <span class="check-icon"><i class="fa-solid fa-arrow-right"></i></span>
+            <span>Drove GitOps and IaC adoption across teams — championed an automation-first, reproducible infrastructure culture</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">// connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Open to senior DevOps / Platform Engineering roles</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="tel:+919779829779" class="contact-card reveal">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 9779829779</span>
+          </div>
+        </a>
+
+        <a href="mailto:k.mahesh.9779@gmail.com" class="contact-card reveal">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">k.mahesh.9779@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/iammaheshkumar" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/iammaheshkumar</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/k3mahesh" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/k3mahesh</span>
+          </div>
+        </a>
+
+        <div class="contact-card reveal no-link">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Delhi, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-copy">&copy; 2025 Mahesh Kumar. Built with passion &amp; vanilla code.</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/iammaheshkumar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/k3mahesh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
