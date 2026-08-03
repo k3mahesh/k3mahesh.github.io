@@ -44,6 +44,47 @@
   }
 
   /* =========================================================
+     THEME TOGGLE — DARK / LIGHT
+     ========================================================= */
+
+  const THEME_KEY = 'mk-theme';
+
+  /**
+   * Apply a theme ('dark' | 'light') to the document root and
+   * update the toggle button icon.
+   */
+  function applyTheme(theme) {
+    const html     = document.documentElement;
+    const iconEl   = $('#theme-icon');
+    const toggleEl = $('#theme-toggle');
+
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      if (iconEl)   { iconEl.className   = 'fa-solid fa-moon'; }
+      if (toggleEl) { toggleEl.setAttribute('title', 'Switch to dark mode'); }
+    } else {
+      html.removeAttribute('data-theme');
+      if (iconEl)   { iconEl.className   = 'fa-solid fa-sun'; }
+      if (toggleEl) { toggleEl.setAttribute('title', 'Switch to light mode'); }
+    }
+  }
+
+  // Apply saved preference immediately (before paint)
+  const savedTheme = localStorage.getItem(THEME_KEY) || 'dark';
+  applyTheme(savedTheme);
+
+  // Wire up the toggle button
+  const themeToggleBtn = $('#theme-toggle');
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const current   = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      const next      = current === 'light' ? 'dark' : 'light';
+      applyTheme(next);
+      localStorage.setItem(THEME_KEY, next);
+    });
+  }
+
+  /* =========================================================
      NAVBAR — SCROLL SHRINK & ACTIVE LINKS
      ========================================================= */
 

@@ -28,17 +28,24 @@
 
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#clients" class="nav-link">Clients</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" title="Toggle light / dark mode">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
-      </button>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -105,6 +112,121 @@
           <div class="stat-label">Microservices</div>
           <div class="stat-desc">Orchestrated on Nomad / EKS</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLIENTS ========== -->
+  <section class="clients-section" id="clients">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">// trusted by</span>
+        <h2 class="section-title">Clients I've Worked With</h2>
+        <p class="section-sub">End-to-end DevOps transformations delivered across enterprise clients</p>
+      </div>
+
+      <div class="clients-grid">
+
+        <div class="client-profile-card reveal">
+          <div class="client-profile-top">
+            <div class="client-profile-icon apple-icon">
+              <i class="fa-brands fa-apple"></i>
+            </div>
+            <div class="client-profile-meta">
+              <h3 class="client-profile-name">Apple Hyderabad</h3>
+              <span class="client-profile-domain">Big Tech · On-Premises &amp; AWS Hybrid</span>
+            </div>
+          </div>
+          <p class="client-profile-highlight">Orchestrated 100+ microservices on Nomad/Consul; led full migration to AWS EKS with zero downtime.</p>
+          <div class="client-profile-stats">
+            <div class="cps"><span class="cps-val">100+</span><span class="cps-label">Microservices</span></div>
+            <div class="cps"><span class="cps-val">~40%</span><span class="cps-label">Alert noise cut</span></div>
+          </div>
+          <div class="client-profile-tags">
+            <span class="tag">AWS EKS</span><span class="tag">Nomad</span><span class="tag">Terraform</span><span class="tag">Grafana</span><span class="tag">Datadog</span>
+          </div>
+        </div>
+
+        <div class="client-profile-card reveal">
+          <div class="client-profile-top">
+            <div class="client-profile-icon pinelabs-icon">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="client-profile-meta">
+              <h3 class="client-profile-name">Pine Labs</h3>
+              <span class="client-profile-domain">Fintech · CI/CD Modernization &amp; DevSecOps</span>
+            </div>
+          </div>
+          <p class="client-profile-highlight">Migrated 130 repos from Bitbucket to GitHub with zero CI/CD downtime; cut pipeline maintenance by ~70%.</p>
+          <div class="client-profile-stats">
+            <div class="cps"><span class="cps-val">130</span><span class="cps-label">Repos migrated</span></div>
+            <div class="cps"><span class="cps-val">~70%</span><span class="cps-label">Pipeline effort cut</span></div>
+          </div>
+          <div class="client-profile-tags">
+            <span class="tag">Jenkins</span><span class="tag">GitHub</span><span class="tag">Terraform</span><span class="tag">DevSecOps</span><span class="tag">Ansible</span>
+          </div>
+        </div>
+
+        <div class="client-profile-card reveal">
+          <div class="client-profile-top">
+            <div class="client-profile-icon platform-icon">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div class="client-profile-meta">
+              <h3 class="client-profile-name">OpsTree — Central Platform</h3>
+              <span class="client-profile-domain">Internal · Reusable Frameworks &amp; Tooling</span>
+            </div>
+          </div>
+          <p class="client-profile-highlight">Built a reusable Terraform module library adopted across 5+ client projects; cut provisioning time by ~60%.</p>
+          <div class="client-profile-stats">
+            <div class="cps"><span class="cps-val">5+</span><span class="cps-label">Clients served</span></div>
+            <div class="cps"><span class="cps-val">~60%</span><span class="cps-label">Provisioning faster</span></div>
+          </div>
+          <div class="client-profile-tags">
+            <span class="tag">Terraform Modules</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Ansible</span>
+          </div>
+        </div>
+
+        <div class="client-profile-card reveal">
+          <div class="client-profile-top">
+            <div class="client-profile-icon publicis-icon">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <div class="client-profile-meta">
+              <h3 class="client-profile-name">Publicis Sapient</h3>
+              <span class="client-profile-domain">Consulting · Azure Cloud Modernization</span>
+            </div>
+          </div>
+          <p class="client-profile-highlight">Migrated entire app stack from Azure App Services to AKS; full-stack observability across Kafka, Cassandra, Redis.</p>
+          <div class="client-profile-stats">
+            <div class="cps"><span class="cps-val">AKS</span><span class="cps-label">Full migration</span></div>
+            <div class="cps"><span class="cps-val">6+</span><span class="cps-label">Services monitored</span></div>
+          </div>
+          <div class="client-profile-tags">
+            <span class="tag">Azure DevOps</span><span class="tag">AKS</span><span class="tag">Terraform</span><span class="tag">Prometheus</span><span class="tag">Kafka</span>
+          </div>
+        </div>
+
+        <div class="client-profile-card reveal">
+          <div class="client-profile-top">
+            <div class="client-profile-icon minda-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div class="client-profile-meta">
+              <h3 class="client-profile-name">Connect Minda</h3>
+              <span class="client-profile-domain">Automotive · Azure Kubernetes &amp; Monitoring</span>
+            </div>
+          </div>
+          <p class="client-profile-highlight">Led VM to AKS migration with end-to-end CI/CD; real-time Prometheus alerting via Teams and Slack.</p>
+          <div class="client-profile-stats">
+            <div class="cps"><span class="cps-val">VM→AKS</span><span class="cps-label">Zero downtime</span></div>
+            <div class="cps"><span class="cps-val">Real-time</span><span class="cps-label">Incident alerts</span></div>
+          </div>
+          <div class="client-profile-tags">
+            <span class="tag">AKS</span><span class="tag">Azure DevOps</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Slack</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
